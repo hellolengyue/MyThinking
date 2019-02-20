@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <item
+        android:id="@+id/nav_joke"
+        android:icon="@drawable/bottom_joke_selector"
+        android:title="笑话"
+        />
+
+    <item
+        android:id="@+id/nav_think"
+        android:icon="@drawable/bottom_main_selector"
+        android:checked="true"
+        android:title="首页"
+        />
+
+    <item
+        android:id="@+id/nav_coll"
+        android:icon="@drawable/bottom_coll_selector"
+        android:title="收藏"
+        />
+</menu>

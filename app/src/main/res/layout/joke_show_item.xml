@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_joke_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="11111"
+        android:textColor="#444444"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_joke_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_joke_title"
+        android:layout_marginTop="6dp"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="vertical"
+        android:text="11111"
+        android:textColor="#555555"
+        android:textSize="17sp"/>
+</RelativeLayout>
+
+

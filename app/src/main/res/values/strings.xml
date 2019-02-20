@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">笑话急转弯</string>
+    <string name="title_jd">经典语录</string>
+    <string name="title_joke">笑话连篇</string>
+    <string name="title_think">脑筋急转弯</string>
+    <string name="title_pic">优美趣图</string>
+    <string name="title_coll">我的收藏</string>
+    <string name="click_exit">再按一次退出程序</string>
+    <string name="coll_item_jd">经典</string>
+    <string name="coll_item_joke">笑话</string>
+    <string name="coll_item_pic">趣图</string>
+    <string name="coll_item_think">脑筋\n急转弯</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+    <string name="load_fail">加载失败</string>
+    <string name="coll_success">收藏成功</string>
+    <string name="coll_cancel_success">取消收藏成功</string>
+
+</resources>

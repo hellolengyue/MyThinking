@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#cccccc</color>
+    <color name="green">#009900</color>
+    <color name="dark_gray">#8a8a8a</color>
+    <color name="bottom_back">#fcfcfc</color>
+    <color name="toolBar">#22cab3</color>
+    <color name="item_back">#b9f0d1</color>
+    <color name="item_back_press">#99f0d1</color>
+    <color name="item_text">#e9535c</color>
+    <color name="content_back">#dfebed</color>
+    <color name="page_back">#f6f6f6</color>
+    <color name="deepwhite">#f1f1f1</color>
+</resources>

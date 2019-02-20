@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:background="#ffffff"
+              android:orientation="vertical"
+              android:paddingBottom="30dp"
+              android:paddingLeft="22.5dp"
+              android:paddingRight="22.5dp"
+              android:paddingTop="20dp">
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/bottom_button_selector"
+        android:gravity="center"
+        android:text="保存到手机"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_coll"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bottom_button_selector"
+        android:gravity="center"
+        android:text="收藏"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bottom_button_selector"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+</LinearLayout>
