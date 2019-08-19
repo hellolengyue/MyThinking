@@ -75,9 +75,12 @@ public class ThinkActivity extends BaseActivity implements View.OnClickListener 
     private String titleStr;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_think);
+    protected int getLayout() {
+        return R.layout.activity_think;
+    }
+
+    @Override
+    protected void initView() {
         initAdData();
         database = SQLiteDatabase.openOrCreateDatabase(Constant.dataPath + "collection", null);
         back = findViewById(R.id.back);
@@ -218,7 +221,6 @@ public class ThinkActivity extends BaseActivity implements View.OnClickListener 
             }
         });
     }
-
 
 
     public void queryColl() {

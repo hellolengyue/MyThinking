@@ -57,11 +57,13 @@ public class SplashActivity extends BaseActivity implements EasyPermissions.Perm
     private PathView pathView;
     private ImageView image;
 
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_splash;
+    }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+    protected void initView() {
         loading = findViewById(R.id.AVLoadingIndicatorView);
 
         pathView = findViewById(R.id.pathView);
@@ -82,7 +84,6 @@ public class SplashActivity extends BaseActivity implements EasyPermissions.Perm
         } else {
             init();
         }
-
     }
 
     @AfterPermissionGranted(0)

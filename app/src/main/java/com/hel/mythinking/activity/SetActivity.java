@@ -54,13 +54,12 @@ public class SetActivity extends BaseActivity implements View.OnClickListener {
     };
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set);
-        initView();
+    protected int getLayout() {
+        return R.layout.activity_set;
     }
 
-    private void initView() {
+    @Override
+    protected void initView() {
         back = (Button) findViewById(R.id.back);
         setAbort = (LinearLayout) findViewById(R.id.set_abort);
         setClear = (LinearLayout) findViewById(R.id.set_clear);

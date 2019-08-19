@@ -81,9 +81,12 @@ public class CollActivity extends BaseActivity {
     };
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coll);
+    protected int getLayout() {
+        return R.layout.activity_coll;
+    }
+
+    @Override
+    protected void initView() {
         back = (Button) findViewById(R.id.back);
         context = this;
         database = SQLiteDatabase.openOrCreateDatabase(Constant.dataPath + "collection", null);

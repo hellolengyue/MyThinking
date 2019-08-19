@@ -88,9 +88,12 @@ public class PicActivity extends BaseActivity {
     };
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_four);
+    protected int getLayout() {
+        return R.layout.fragment_four;
+    }
+
+    @Override
+    protected void initView() {
         findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

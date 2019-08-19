@@ -86,13 +86,16 @@ public class ViewImageActivity extends BaseActivity {
     private int page;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected int getLayout() {
+        return R.layout.activity_view_image;
+    }
+
+    @Override
+    protected void initView() {
         context = this;
-        setContentView(R.layout.activity_view_image);
         database = SQLiteDatabase.openOrCreateDatabase(Constant.dataPath + "collection", null);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN); //隐藏状态栏
-        viewPager =  findViewById(R.id.view_pager);
+        viewPager = findViewById(R.id.view_pager);
         Intent intent = getIntent();
 //        url = intent.getStringExtra("url");
         type = intent.getStringExtra("type");
@@ -133,7 +136,6 @@ public class ViewImageActivity extends BaseActivity {
                 setDialog(datas.get(position).getUrl());
             }
         });
-
 
     }
 

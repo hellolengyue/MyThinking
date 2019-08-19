@@ -1,8 +1,13 @@
 package com.hel.mythinking.activity;
 
+import android.graphics.Color;
+import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.hel.mythinking.utils.BarUtils;
 import com.sixth.adwoad.ErrorCode;
 import com.sixth.adwoad.InterstitialAd;
 import com.sixth.adwoad.InterstitialAdListener;
@@ -15,9 +20,21 @@ import com.umeng.analytics.MobclickAgent;
  * 描述
  */
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
     public String Adwo_PID = "f152c0bdfd9d4d89ab3d8ad96b8c9ce8";
     private InterstitialAd ad;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(getLayout());
+        BarUtils.setStatusBarColor(this, Color.TRANSPARENT);
+        initView();
+    }
+
+    protected abstract int getLayout();
+    protected abstract void initView();
+
     public void initAdData() {
         //全屏广告实例
         ad = new InterstitialAd(this, Adwo_PID, false, new InterstitialAdListener() {

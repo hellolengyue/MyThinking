@@ -36,11 +36,13 @@ public class JdShowActivity extends BaseActivity {
     private TextView topTitle;
     private LinearLayout no_coll;
 
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_jd_show;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jd_show);
+    protected void initView() {
         initAdData();
         back = (Button) findViewById(R.id.back);
         more = (Button) findViewById(R.id.more);

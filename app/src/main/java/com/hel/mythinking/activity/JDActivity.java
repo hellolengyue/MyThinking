@@ -53,9 +53,12 @@ public class JDActivity extends BaseActivity {
     };
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_jd);
+    protected int getLayout() {
+        return R.layout.fragment_jd;
+    }
+
+    @Override
+    protected void initView() {
         findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,7 +114,6 @@ public class JDActivity extends BaseActivity {
                 initData();
             }
         });
-
     }
 
 

@@ -44,11 +44,13 @@ public class JokeActivity extends BaseActivity{
     private TextView topTitle;
     private LinearLayout no_coll;
 
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_joke;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_joke);
+    protected void initView() {
         initAdData();
         back =  findViewById(R.id.back);
         more =  findViewById(R.id.more);

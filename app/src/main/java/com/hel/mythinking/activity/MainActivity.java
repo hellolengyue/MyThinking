@@ -32,11 +32,13 @@ public class MainActivity extends BaseActivity {
     private Button openMenu;
     private BottomNavigationViewEx bnve;
 
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_main;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void initView() {
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         navigationView.setItemIconTintList(null);

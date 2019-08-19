@@ -52,11 +52,13 @@ public class NewDayActivity extends BaseActivity {
 
         }
     };
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_new;
+    }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new);
+    protected void initView() {
         findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,8 +83,6 @@ public class NewDayActivity extends BaseActivity {
         });
         adapter = new NewDayAdapter(list, this);
         dayRecyclerView.setAdapter(adapter);
-
-
     }
 
     private void initData() {
